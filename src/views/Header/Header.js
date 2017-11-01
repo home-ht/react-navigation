@@ -327,8 +327,6 @@ class Header extends React.PureComponent<Props, State> {
 let platformContainerStyles;
 if (Platform.OS === 'ios') {
   platformContainerStyles = {
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: 'rgba(0, 0, 0, .3)',
   };
 } else {
   platformContainerStyles = {
@@ -344,7 +342,7 @@ if (Platform.OS === 'ios') {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Platform.OS === 'ios' ? '#F7F7F7' : '#FFF',
+    backgroundColor: 'white',
     ...platformContainerStyles,
   },
   appBar: {
